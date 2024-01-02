@@ -1,0 +1,67 @@
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  line-height: 1.2;
+  animation: hidden 1000ms linear forwards;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#hero .container .hero-title{
+  text-align: center;
+}
+
+.scroll-down-link {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  
+}
+
+#one {
+  animation: reveal-text 5s ease-in-out forwards;
+
+}
+#two {
+  animation: reveal-text 10s ease-in-out forwards;
+
+}
+#three{
+  animation: reveal-text 15s ease-in-out forwards;
+
+}
+#four{
+  animation: reveal-text 20s ease-in-out forwards;
+
+}
+
+@keyframes reveal-text {
+  0% {
+    opacity: 0;
+    transform: translatey(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}

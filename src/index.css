@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slide-left {
+    animation: slideLeft 2.5s ease-in-out;
+  }
+  
+  /*type writer */
+@keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  
+  .animate-typewriter {
+    display: inline-block;
+    animation: typewriter steps(10) infinite;
+  }
+  
+
+  /* image animation */
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideBackToOriginal {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  /*  slide-in and slide-back effects */
+  .animate-image {
+    img {
+      animation: slideInFromLeft 2s ease-in-out forwards;
+    }
+  
+    &.animate-back {
+      img {
+        animation: slideBackToOriginal 1s ease-in-out forwards;
+      }
+    }
+  }
+  
+  /* image from right */
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideBackToOriginal {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+  /*  the slide-in and slide-back effects */
+  .animate-section {
+    img {
+      animation: slideInFromRight 2s ease-in-out forwards;
+    }
+  
+    &.animate-back {
+      img {
+        animation: slideBackToOriginal 1s ease-in-out forwards;
+      }
+    }
+  }
+  
+  
+#video-container {
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
