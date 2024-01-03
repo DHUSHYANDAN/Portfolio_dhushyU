@@ -1,25 +1,25 @@
 
 import React from 'react';
 import Footer from '../components/Footer';
-import Contactus from '../components/Contactus';
-import About from '../components/Projects'
+import Contactme from '../components/Contactme';
+
 import Projects from '../components/Projects';
 import Template from '../components/template';
+import About from '../components/About';
 
 
-
-const Home = () => {
+function Home() {
     return (
-    <>   
-        <Template/>
-        <About />
-        <Projects/>
-        <Contactus/>
-        <Footer/> 
-        
-    </>
+        <>
+            <Template />
+            <About />
+            <Projects />
+            <Contactme />
+            <Footer />
 
-    )
+        </>
+
+    );
 }
 
 export default Home

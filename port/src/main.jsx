@@ -1,10 +1,12 @@
 import './css_components/main.css'
+import ReactDOM from 'react-dom/client';
+
 import './css_components/_hero.css'
-//import './css_components/index.css'
+import './css_components/index.css'
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
-import Contact from './pages/contact'
+import Contact from './pages/Contact'
 
 
 
@@ -17,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} exact/>
-        <Route path='/contact' element={<Contact />} exact    />
+        <Route path='/Contact' element={<Contact />} exact    />
         
       </Routes>
     </BrowserRouter>
