@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Contactme from '../components/Contactme';
 
 import Projects from '../components/Projects';
-import Template from '../components/template';
+import Template from '../components/Template';
 import About from '../components/About';
 
 

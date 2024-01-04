@@ -1,8 +1,9 @@
-import './css_components/main.css'
 import ReactDOM from 'react-dom/client';
-
+import './css_components/main.css'
 import './css_components/_hero.css'
 import './css_components/index.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'

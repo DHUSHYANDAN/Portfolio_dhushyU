@@ -1,9 +1,8 @@
 import React from 'react';
 
-const Contact = () => {
+const App = () => {
   return (
-    <div className="bg-gray-100 max-w-screen-2xl mx-auto bg-white rounded-md p-6 shadow-md">
-
+    <section className="bg-gray-100 max-w-screen-2xl mx-auto bg-white rounded-md p-6 shadow-md">
       <nav className="bg-gray-800 text-white p-4">
         <div className="container mx-auto">
           <a href="#" className="text-2xl font-bold">Get Contact with me</a>
@@ -11,7 +10,6 @@ const Contact = () => {
       </nav>
 
       <div className="container mx-auto mt-8">
-
         <section className="mb-8">
           <h2 className="text-3xl font-bold mb-4">Hello, I'm DHUSHYANDAN</h2>
           <p className="text-gray-700">Welcome to my portfolio. I am a passionate Web Developer with expertise in HTML, CSS, Basic in Javascript, python, Java. Feel free to explore my work below.</p>
@@ -38,7 +36,6 @@ const Contact = () => {
             <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send Message</button>
           </form>
         </section>
-
       </div>
 
       <footer className="bg-gray-800 text-white p-4 mt-8">
@@ -46,9 +43,8 @@ const Contact = () => {
           &copy; 2023 My Portfolio. All rights reserved.
         </div>
       </footer>
-
-    </div>
+    </section>
   );
 }
 
-export default Contact;
+export default App;

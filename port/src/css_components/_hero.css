@@ -11,16 +11,16 @@
   animation: hidden 1000ms linear forwards;
 }
 
-.container{
+#hero .container{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-#hero .container .hero-title{
+  /* .container .hero-title{
   text-align: center;
-}
+}  */
 
 .scroll-down-link {
   position: absolute;
@@ -65,3 +65,4 @@
     transform: translatey(0);
   }
 }
+
