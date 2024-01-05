@@ -17,15 +17,7 @@
     animation: slideLeft 2.5s ease-in-out;
   }
   
-  /*type writer */
-@keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+ 
   
   
   .animate-typewriter {
@@ -112,6 +104,5 @@
 #video-container {
   transition: transform 0.5s ease-in-out;
 }
-
 
 

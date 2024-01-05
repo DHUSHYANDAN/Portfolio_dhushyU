@@ -11,6 +11,7 @@
   animation: hidden 1000ms linear forwards;
 }
 
+
 #hero .container{
   display: flex;
   justify-content: center;
@@ -65,4 +66,5 @@
     transform: translatey(0);
   }
 }
+
 
