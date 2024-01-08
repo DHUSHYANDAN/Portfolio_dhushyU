@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Template = () => {
@@ -9,7 +7,7 @@ const Template = () => {
         <h1 className="hero-title animate-slide-left">
           Hi, my name is <span className="text-color-main name">Dhushyandan</span>
           <br />
-          I'm the Web Developer.
+          I&apos;m the Web Developer.
         </h1>
         <p className="hero-cta">
           {/* Assuming you are using React Router */}
@@ -27,4 +25,3 @@ const Template = () => {
 }
 
 export default Template;
- 

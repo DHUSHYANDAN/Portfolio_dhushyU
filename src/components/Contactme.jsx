@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const Contactme = () => {
+const ContactMe = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -40,4 +40,4 @@ const Contactme = () => {
   );
 };
 
-export default Contactme;
+export default ContactMe;

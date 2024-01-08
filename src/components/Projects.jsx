@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import react, { useEffect } from 'react';
 import Biodata from '../assets/biodata.png';
 import ParallaxVid from '../assets/parallex.mp4';
 import NetflixVid from '../assets/Netflix.mp4';
@@ -64,7 +64,7 @@ const Projects = () => {
               <div className="project-wrapper__text">
                 <h3 className="project-wrapper__text-title">Parallax Website</h3>
                 <p className="project-wrapper__text-info" id="three">
-                  It is a simple level project. A typical website with a parallax effect is one in which the background of the website moves slower than the elements in the foreground. The visual effect we're able to achieve gives the impression of movement and depth as if there is space between the foreground and background.
+                  It is a simple level project. A typical website with a parallax effect is one in which the background of the website moves slower than the elements in the foreground. The visual effect we`&apos;`re able to achieve gives the impression of movement and depth as if there is space between the foreground and background.
                 </p>
                 <div className="project-wrapper__text-btns">
                   <a href="https://github.com/DHUSHYANDAN/parallax.git" target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-btn--hero cta-btn--projects">Source Code</a>
@@ -108,7 +108,7 @@ const Projects = () => {
             </article>
           </div>
         </div>
-      </section> 
+      </section>
     </>
   );
 };

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import { Link } from 'react-router-dom';
-const App = () => {
+
+const ContactPage = () => {
   const fadeProps = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
@@ -86,7 +87,7 @@ const App = () => {
                   type="submit"
                   className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300"
                 >
-                 <Link to='/'>Send Message</Link> 
+                  <Link to='/'>Send Message</Link>
                 </button>
               </form>
             </section>
@@ -101,4 +102,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default ContactPage;
