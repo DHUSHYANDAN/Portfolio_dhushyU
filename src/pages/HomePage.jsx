@@ -1,5 +1,5 @@
 import About from "../components/About"
-import ContactMe from "../components/ContactMe"
+import Contactme from "../components/Contactme"
 import Footer from "../components/Footer"
 import Projects from "../components/Projects"
 import Template from "../components/Template"
@@ -11,7 +11,7 @@ const HomePage = () => {
       <Template />
       <About />
       <Projects/>
-      <ContactMe/>
+      <Contactme/>
       <Footer/>
     </>
   )
