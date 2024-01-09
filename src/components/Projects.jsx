@@ -1,6 +1,6 @@
 import react, { useEffect } from 'react';
 import Biodata from '../assets/biodata.webp';
-import ParallaxVid from '../assets/parallex.WEBM';
+import ParallaxVid from '../assets/parallex.WEBM'
 import NetflixVid from '../assets/Netflix.WEBM';
 
 const Projects = () => {
