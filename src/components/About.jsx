@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import profilePic from '../assets/dhushyandan.png';
+import profilePic from '../assets/dhushyandan.webp';
 
 const About = () => {
   useEffect(() => {
