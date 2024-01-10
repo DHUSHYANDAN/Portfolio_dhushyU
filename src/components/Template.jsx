@@ -14,12 +14,14 @@ const Template = () => {
           <Link to="/Contact" className="cta-btn cta-btn--hero animate-slide-left">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75 bg-red"></span>
             Get in touch
-          </Link>
-        </p>
-      </section>
-      <a href="#about" className="scroll-down-link" aria-label="scroll-down">
+          </Link> 
+        </p>  <br /><br /><br /><br /><br /><br /><br />
+        <a href="#about" className="scroll-down-link" aria-label="scroll-down">
         <div className="scroll-down"></div>
       </a>
+      </section>  
+      
+      
     </div>
   );
 }
