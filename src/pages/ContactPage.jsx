@@ -31,7 +31,7 @@ const ContactPage = () => {
             <section className="mb-8 w-full">
               <h2 className="text-3xl font-bold mb-4 text-green-700">Hello, I'm DHUSHYANDAN</h2>
               <p className="text-gray-300">
-                Welcome to my portfolio. I am a passionate Web Developer with expertise in HTML, CSS, Basic in Javascript, python, Java.
+                Welcome to my portfolio. I am a passionate Web Developer with expertise in HTML, CSS, Basic in Javascript, basics of python, basics of Java, basics of React, Bootstrap and tailwindcss.
                 Feel free to explore my work below.
               </p>
             </section>
