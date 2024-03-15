@@ -89,3 +89,10 @@
   #video-container {
     transition: transform 0.5s ease-in-out;
   }
+
+  img
+ {
+  max-width: 70%;
+  
+  height: ;
+}

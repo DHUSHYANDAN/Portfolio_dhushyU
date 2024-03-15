@@ -1,5 +1,5 @@
 import react, { useEffect } from 'react';
-import Biodata from '../assets/biodata.webp';
+import Biodata from "../assets/biodata.webp.webp"
 import ParallaxVid from '../assets/parallex.webm'
 import NetflixVid from '../assets/Netflix.webm';
 
@@ -43,7 +43,7 @@ const Projects = () => {
               <div className="project-wrapper__text">
                 <h3 className="project-wrapper__text-title">Bio Data</h3>
                 <p className="project-wrapper__text-info" id="two">
-                  It is a basic level project. Also known as biographical data, a biodata typically includes a range of specific factual information about an individual. Essentially, biodata highlights a number of details about a person such as; name, age, color, height, skills, hobbies, allergies etc.
+                  It is a basic level project. Also known as biographical data, a biodata typically includes a range of specific factual information about an individual. "It is a validation form". Essentially, biodata highlights a number of details about a person such as; name, age, color, height, skills, hobbies, allergies etc.
                 </p>
                 <div className="project-wrapper__text-btns">
                   <a href="https://github.com/DHUSHYANDAN/BioDATA.git" target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-btn--hero cta-btn--projects">Source Code</a>
@@ -52,8 +52,8 @@ const Projects = () => {
 
               <div className="project-wrapper__image">
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <div className="thumbnail rounded" id="custom-animated-section">
-                    <img src={Biodata} className="w-1/2 transform translate-x-full opacity-0 transition-transform duration-1000" alt="Project Image" />
+                  <div className="thumbnail rounded flex justify-center" id="custom-animated-section">
+                    <img src={Biodata} className=" transform translate-x-full opacity-0 transition-transform duration-1000" alt="Project Image" />
                   </div>
                 </a>
               </div>
