@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer  id='footer' className="footer">
             <div className="container">
-                <a href="#hero" className="back-to-top" aria-label="go back to top">
+                <a href="#hero"  className="back-to-top" aria-label="go back to top">
                     <i className="fas fa-angle-up fa-2x" aria-hidden="true"></i>
                 </a>
                 <div className="social-links">
@@ -23,14 +23,14 @@ const Footer = () => {
                         target="_blank" rel="noopener noreferrer" aria-label="linkedin">
                         <i className="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/DHUSHYU" target="_blank" rel="noopener noreferrer" aria-label="github">
+                    <a href="https://github.com/DHUSHYANDAN" target="_blank" rel="noopener noreferrer" aria-label="github">
                         <i className="fab fa-github"></i>
                     </a>
                 </div>
                 <hr />
                 <p className="footer__text">
                     @ - Portfolio by
-                    <a href="https://github.com/DHUSHYU" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/DHUSHYANDAN" target="_blank" rel="noopener noreferrer">
                         Dhushyandan.</a> <br />Made with &hearts;
                 </p>
             </div>
