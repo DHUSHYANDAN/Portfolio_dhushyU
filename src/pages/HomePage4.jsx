@@ -1,15 +1,16 @@
+
+import Contactme from "../components/Contactme"
 import Footer from "../components/Footer"
-import Template from "../components/Template"
 import Navbars from "../components/Navbars"
 
-const HomePage = () => {
+const HomePage4 = () => {
   return (
     <>
       <Navbars/>
-       <Template/>
-      <Footer/> 
+      <Contactme/>
+      <Footer/>
     </>
   )
 }
 
-export default HomePage
+export default HomePage4

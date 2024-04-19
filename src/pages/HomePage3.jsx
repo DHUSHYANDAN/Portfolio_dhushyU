@@ -1,15 +1,16 @@
+
 import Footer from "../components/Footer"
-import Template from "../components/Template"
+import Projects from "../components/Projects"
 import Navbars from "../components/Navbars"
 
-const HomePage = () => {
+const HomePage3 = () => {
   return (
     <>
       <Navbars/>
-       <Template/>
-      <Footer/> 
+      <Projects/>
+      <Footer/>
     </>
   )
 }
 
-export default HomePage
+export default HomePage3

@@ -29,11 +29,11 @@ const About = () => {
   }, []); // Empty dependency array means this effect runs once after the initial render
 
   return (
-    <section id="about">
+    <section id="about" className='bg-sky-400'>
       <div className="container">
         <h2 className="section-title text-3xl">About Me</h2>
         <div className="row about-wrapper">
-          <div className="about-wrapper__image" id="animated-image">
+          <div className="" id="animated-image">
             <img
               className="img-fluid w-1/2 transform translate-x-full opacity-0 transition-transform duration-1000"
               src={profilePic}
