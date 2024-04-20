@@ -51,7 +51,7 @@ const Projects = () => {
               </div>
 
               <div className="project-wrapper__image">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <div className="thumbnail rounded flex justify-center" id="custom-animated-section">
                     <img src={Biodata} className=" transform translate-x-full opacity-0 transition-transform duration-1000" alt="Project Image" />
                   </div>
@@ -72,7 +72,7 @@ const Projects = () => {
               </div>
 
               <div className="project-wrapper__image">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <div className="thumbnail rounded">
                     <video width="100%" autoPlay muted loop className="img-fluid">
                       <source src={ParallaxVid} />
@@ -96,7 +96,7 @@ const Projects = () => {
               </div>
 
               <div className="project-wrapper__image">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="" target="_blank" rel="noopener noreferrer">
                   <div className="thumbnail rounded">
                     <video width="100%" autoPlay muted loop className="img-fluid">
                       <source src={NetflixVid} type="video/mp4" />

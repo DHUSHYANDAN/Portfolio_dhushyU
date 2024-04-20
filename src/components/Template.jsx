@@ -12,7 +12,7 @@ const Template = () => {
           <h1 className="hero-title animate-slide-left">
             Hi, my name is <span className="text-color-main name">Dhushyandan</span>
             <br />
-            I&apos;m the Web Developer.
+            I&apos;m a Web Developer.
           </h1>
           <p className="hero-cta">
             {/* Assuming you are using React Router */}
@@ -28,6 +28,7 @@ const Template = () => {
         </section>
       </div>
     </div>
+    
 </>
   );
 }

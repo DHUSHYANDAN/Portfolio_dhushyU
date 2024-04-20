@@ -6,10 +6,10 @@ import Contactme from "../components/Contactme"
 const HomePage2 = () => {
   return (
     <>
-      <Navbars/>
-      <About/>
-      <Contactme/>
-      <Footer/>
+      <Navbars />
+      <About />
+
+      <Footer />
     </>
   )
 }

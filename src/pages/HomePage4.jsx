@@ -6,9 +6,9 @@ import Navbars from "../components/Navbars"
 const HomePage4 = () => {
   return (
     <>
-      <Navbars/>
-      <Contactme/>
-      <Footer/>
+      <Navbars />
+      <Contactme />
+      <Footer />
     </>
   )
 }

@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* nav bar setting */
+  @layer components {
+    @layer components {
+      .mar:hover {
+        @apply hover:grid ;
+        box-shadow: 0 10px 15px rgba(66, 153, 225, 0.7);
+        transform: scale(1.03);
+         margin-left: 29px; /* 8 pixels of left margin */
+        margin-right: 29px;;
+      }
+    }
+  }
+    
+    @media screen and (max-width: 450px) {
+      .mar:hover {
+       
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px; /* You might not need this line as the other margin reset rules should override it */
+      }
+    }
+  
+
+
 *,
 ::before,
 ::after {
@@ -941,3 +965,4 @@ video {
     display: flex;
   }
 }
+

@@ -29,9 +29,9 @@ const Footer = () => {
                 </div>
                 <hr />
                 <p className="footer__text">
-                    @ - Portfolio by
+                   
                     <a href="https://github.com/DHUSHYANDAN" target="_blank" rel="noopener noreferrer">
-                        Dhushyandan.</a> <br />Made with &hearts;
+                    @ - Portfolio by  Dhushyandan.</a> <br />Made with ❤️;
                 </p>
             </div>
         </footer>
