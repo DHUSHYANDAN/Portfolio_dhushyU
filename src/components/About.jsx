@@ -26,9 +26,10 @@ const About = () => {
     return () => {
       observer.disconnect();
     };
-  }, []); // Empty dependency array means this effect runs once after the initial render
+  }, []); 
 
   return (
+    <>
     <section id="about" className='bg-sky-400'>
       <div className="container">
         <h2 className="section-title text-3xl">About Me</h2>
@@ -55,11 +56,12 @@ const About = () => {
               I am passionate about Technology, and my dedication to staying at the forefront of industry trends
               positions me as a forward-thinking professional.
             </p>
-            {/* Removed unused code */}
+            
           </div>
         </div>
       </div>
     </section>
+</>
   );
 };
 

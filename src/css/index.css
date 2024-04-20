@@ -3,7 +3,21 @@
 @tailwind utilities;
 
 /* nav bar setting */
-  @layer components {
+.sh{
+ 
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.4);
+}
+.shadow:hover{
+        transform: scale(1.03);
+  box-shadow: 0 8px 10px rgba(255, 255, 255, 0.4);
+  
+}
+      .shado:hover{
+        
+        box-shadow: 0 10px 15px rgba(128, 0, 128, 0.7);
+      }
+
+  
     @layer components {
       .mar:hover {
         @apply hover:grid ;
@@ -13,7 +27,7 @@
         margin-right: 29px;;
       }
     }
-  }
+  
     
     @media screen and (max-width: 450px) {
       .mar:hover {
