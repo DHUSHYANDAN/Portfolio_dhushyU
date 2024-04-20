@@ -17,10 +17,7 @@
         box-shadow: 0 10px 15px rgba(128, 0, 128, 0.7);
       }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 7073e58c0a10f66c22e5364a9d691f52d3a630f8
   
     @layer components {
       .mar:hover {
@@ -31,10 +28,6 @@
         margin-right: 29px;;
       }
     }
-<<<<<<< HEAD
-  
-=======
->>>>>>> 7073e58c0a10f66c22e5364a9d691f52d3a630f8
     
     @media screen and (max-width: 450px) {
       .mar:hover {
@@ -986,4 +979,3 @@ video {
     display: flex;
   }
 }
-
