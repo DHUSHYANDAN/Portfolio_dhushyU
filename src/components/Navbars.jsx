@@ -19,8 +19,14 @@ const Navbars = () => {
 
   return (
     <>
+<<<<<<< HEAD
        {loading && (
         <div className="fixed inset-0 z-30 flex items-center justify-center text-2xl font-semibold text-white bg-gray-500 bg-opacity-50 ">
+=======
+       
+      {loading && (
+        <div className="fixed inset-0 z-30 flex items-center justify-center text-2xl font-semibold text-white bg-gray-500 bg-opacity-50">
+>>>>>>> 7073e58c0a10f66c22e5364a9d691f52d3a630f8
           Loading.....
         </div>
       )}
@@ -37,22 +43,38 @@ const Navbars = () => {
           {/* Nav Links */}
           <ul className="hidden sm:flex px-4 space-x-24">
             <li>
+<<<<<<< HEAD
               <Link to="/" className="sh text-white shadow  text-indigo-700 hover:bg-purple-100 hover:text-purple-800    rounded-md font-bold  justify-center px-2 py-2 focus:bg-purple-100 focus:text-purple-800  ">
+=======
+              <Link to="/" className="sh text-white shadow  text-indigo-700 hover:bg-purple-100 hover:text-purple-800    rounded-md font-bold  justify-center px-2 py-2">
+>>>>>>> 7073e58c0a10f66c22e5364a9d691f52d3a630f8
                 Home
               </Link>
             </li>
             <li>
+<<<<<<< HEAD
               <Link to="/about" className="sh text-white shadow  text-indigo-700 hover:bg-purple-100 hover:text-purple-800    rounded-md font-bold  justify-center px-2 py-2 focus:bg-purple-100 focus:text-purple-800 ">
+=======
+              <Link to="/about" className="sh text-white shadow  text-indigo-700 hover:bg-purple-100 hover:text-purple-800    rounded-md font-bold  justify-center px-2 py-2">
+>>>>>>> 7073e58c0a10f66c22e5364a9d691f52d3a630f8
                 About
               </Link>
             </li>
             <li>
+<<<<<<< HEAD
               <Link to="/projects" className="sh text-white shadow  text-indigo-700 hover:bg-purple-100 hover:text-purple-800    rounded-md font-bold  justify-center px-2 py-2 focus:bg-purple-100 focus:text-purple-800 ">
+=======
+              <Link to="/projects" className="sh text-white shadow  text-indigo-700 hover:bg-purple-100 hover:text-purple-800    rounded-md font-bold  justify-center px-2 py-2">
+>>>>>>> 7073e58c0a10f66c22e5364a9d691f52d3a630f8
                 Projects
               </Link>
             </li>
             <li>
+<<<<<<< HEAD
               <Link to="/contactme" className="sh text-white shadow  text-indigo-700 hover:bg-purple-100 hover:text-purple-800    rounded-md font-bold  justify-center px-2 py-2 focus:bg-purple-100 focus:text-purple-800 ">
+=======
+              <Link to="/contactme" className="sh text-white shadow  text-indigo-700 hover:bg-purple-100 hover:text-purple-800    rounded-md font-bold  justify-center px-2 py-2">
+>>>>>>> 7073e58c0a10f66c22e5364a9d691f52d3a630f8
                 Contact
               </Link>
             </li>
@@ -66,7 +88,12 @@ const Navbars = () => {
 </a>
       </nav>
 
+<<<<<<< HEAD
       {/* <div id="mobileview" className="inset-0 fixed z-40 flex items-center text-white bg-gray-900 bg-opacity-50">
+=======
+      
+      <div id="mobileview" className="inset-0 fixed z-40 flex items-center text-white bg-gray-900 bg-opacity-50">
+>>>>>>> 7073e58c0a10f66c22e5364a9d691f52d3a630f8
         <div className="inset-0 fixed z-50 flex flex-col items w-2/5 text-white bg-gray-50">
           <div className="bg-sky-800 flex justify-between p-3">
             <img
