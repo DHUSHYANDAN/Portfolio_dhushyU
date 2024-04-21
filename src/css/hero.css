@@ -4,11 +4,24 @@
     align-items: center;
     justify-content: center;
     font-weight: 400;
+    
+    
     padding: 0rem 5.6rem;
     line-height: 1.2;
     animation: hidden 1000ms linear forwards;
   }
   
+/* about card height */
+.heig{
+  height:400px;
+}
+
+@media screen and (max-width: 530px) {
+  .heig{
+   height:100%;
+  }
+}
+
   
   #hero .container{
     display: flex;
@@ -42,18 +55,25 @@
   
   }
   #two {
-    animation: reveal-text 10s ease-in-out forwards;
+    animation: reveal-text 5s ease-in-out forwards;
   
   }
   #three{
-    animation: reveal-text 15s ease-in-out forwards;
+    animation: reveal-text 5s ease-in-out forwards;
   
   }
   #four{
-    animation: reveal-text 20s ease-in-out forwards;
+    animation: reveal-text 5s ease-in-out forwards;
   
   }
-  
+
+  @media screen and (min-width: 640px) {
+    #nav {
+        display: none;
+    }
+}
+
+
   @keyframes reveal-text {
     0% {
       opacity: 0;

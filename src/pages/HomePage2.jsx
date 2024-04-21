@@ -1,17 +1,17 @@
+import About from "../components/About"
 import Footer from "../components/Footer"
-import Template from "../components/Template"
 import Navbars from "../components/Navbars"
 
 
-const HomePage = () => {
+const HomePage2 = () => {
   return (
     <>
-      
       <Navbars />
-      <Template />
+      <About />
+
       <Footer />
     </>
   )
 }
 
-export default HomePage
+export default HomePage2

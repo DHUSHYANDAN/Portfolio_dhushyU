@@ -1,6 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* nav side bar height */
+
+/* nav bar setting */
+
+.sho{
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
+}
+.sh{
+ 
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.4);
+}
+.shadow:hover{
+       
+  box-shadow: 0 8px 10px rgba(255, 255, 255, 0.4);
+  
+}
+      .shado:hover{
+        
+        box-shadow: 0 10px 15px rgba(128, 0, 128, 0.7);
+      }
+
+
+  
+    @layer components {
+      .mar:hover {
+        @apply hover:grid ;
+        box-shadow: 0 10px 15px rgba(66, 153, 225, 0.7);
+        transform: scale(1.03);
+         margin-left: 29px; /* 8 pixels of left margin */
+        margin-right: 29px;;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      .bor{
+       border:2px solid lightblue
+      }
+   }
+   
+
+
+    @media screen and (max-width: 500px) {
+       .items{
+        width:50%;
+       }
+    }
+    
+    @media screen and (max-width: 450px) {
+      .mar:hover {
+        
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px; /* You might not need this line as the other margin reset rules should override it */
+      }
+    }
+  
+
 
 *,
 ::before,
@@ -918,6 +974,27 @@ video {
 .animate-section.animate-back img {
   animation: slideBackToOriginalRight 1s ease-in-out forwards;
 }
+
+/* about mobile view profile pic */
+.mobile-profile-pic-container {
+  position: relative;
+  animation: mobileProfilePicAnimation 2s ease-out;
+}
+
+@keyframes mobileProfilePicAnimation {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
 
 /* Other styles */
 #video-container {
