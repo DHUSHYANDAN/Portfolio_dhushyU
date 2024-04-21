@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container">
                 
                 <div className="social-links">
-                    <a href="mailto:smartworkdhushyu@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="gmail">
+                    <a href="mailto:dhushyandan302002@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="gmail">
                         <i className="far fa-envelope hover:text-blue-500"></i>
                     </a>
                     <a href="https://www.instagram.com/d_h_u_s_h_yu/?hl=en" target="_blank" rel="noopener noreferrer"

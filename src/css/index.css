@@ -975,6 +975,27 @@ video {
   animation: slideBackToOriginalRight 1s ease-in-out forwards;
 }
 
+/* about mobile view profile pic */
+.mobile-profile-pic-container {
+  position: relative;
+  animation: mobileProfilePicAnimation 2s ease-out;
+}
+
+@keyframes mobileProfilePicAnimation {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
 /* Other styles */
 #video-container {
   transition: transform 0.5s ease-in-out;

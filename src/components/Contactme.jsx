@@ -27,12 +27,12 @@ const Contactme = () => {
           initial={{ x: -50, opacity: 0 }}
           animate={controls}
         > 
-          <p className="text-3xl font-semibold text-black">Email me at:</p>
+          <p className="text-3xl font-semibold text-black">Click 'Gmail' to contact  me :</p>
           <a
-            href="mailto:yourname@gmail.com"
-            className="text-blue-900 hover:text-red-600 text-2xl"
+            href="mailto:smartdhushyu@gmail.com"
+            className="text-red-600 hover:text-green-600 text-2xl"
           >
-            dhushyandan302002@gmail.com
+             smartdhushyu@gmail.com
           </a>
         </motion.div>
       </div>
