@@ -80,7 +80,7 @@ const Contact = () => {
                       name="message"
                       rows="4"
                       placeholder="Enter your message"
-                      className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 text-black"
+                      className="w-full md:w-1/2 p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 text-black"
                       required
                     ></textarea>
                   </div>

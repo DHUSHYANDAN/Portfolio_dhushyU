@@ -11,13 +11,17 @@
     animation: hidden 1000ms linear forwards;
   }
   
-  /* nav bar mar in mobile view */
-/* .mar{
- margin-left:30px;
- margin-right:30px;
- 
+/* about card height */
+.heig{
+  height:400px;
+}
 
-} */
+@media screen and (max-width: 530px) {
+  .heig{
+   height:100%;
+  }
+}
+
   
   #hero .container{
     display: flex;

@@ -20,8 +20,7 @@ const Navbars = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
-
-
+ 
   return (
     <>
       {loading && (
@@ -104,7 +103,7 @@ const Navbars = () => {
             </div>
             <ul className="md:flex p-4  h-full ">
             <li>
-              <Link to="/" className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600   p-1 flex rounded-md font-bold  justify-center mt-4 ">
+              <Link to="/" className="flex hover:text-white mar hover:border-blue-600 text-indigo-700 hover:bg-blue-600 bor  p-1 flex rounded-md font-bold  justify-center mt-4 ">
                 <div className="flex">
                   <svg
                     className="flex m-1   pr-6 pl-3"
@@ -129,7 +128,7 @@ const Navbars = () => {
             <li>
               <Link
                 to="/about"
-                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600   p-2 flex rounded-md font-bold  justify-center mt-4"
+                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600  p-2 flex rounded-md font-bold  justify-center mt-4"
               >
                 <div className="flex">
                   <svg
@@ -149,7 +148,7 @@ const Navbars = () => {
             <li>
               <Link
                 to="/projects"
-                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600   p-2 flex rounded-md font-bold  justify-center mt-4"
+                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-2 flex rounded-md font-bold  justify-center mt-4"
               >
                 <div className="flex">
                   <svg
@@ -172,7 +171,7 @@ const Navbars = () => {
             <li>
               <Link
                 to="/contactme"
-                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600   p-1 flex rounded-md font-bold  justify-center mt-4"
+                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-1 flex rounded-md font-bold  justify-center mt-4"
               >
                 <div className="flex">
                   <svg

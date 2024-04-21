@@ -13,7 +13,7 @@
   box-shadow: 0 2px 3px rgba(255, 255, 255, 0.4);
 }
 .shadow:hover{
-        transform: scale(1.03);
+       
   box-shadow: 0 8px 10px rgba(255, 255, 255, 0.4);
   
 }
@@ -33,7 +33,14 @@
         margin-right: 29px;;
       }
     }
+    @media screen and (max-width: 450px) {
+      .bor{
+       border:2px solid lightblue
+      }
+   }
    
+
+
     @media screen and (max-width: 500px) {
        .items{
         width:50%;
