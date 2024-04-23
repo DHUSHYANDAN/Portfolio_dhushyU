@@ -1,7 +1,8 @@
 import react, { useEffect } from 'react';
-import Biodata from "../assets/biodata.webp.webp"
+import Biodata from "../assets/biodata.webp"
 import ParallaxVid from '../assets/parallex.webm'
 import NetflixVid from '../assets/Netflix.webm';
+
 
 const Projects = () => {
   useEffect(() => {
@@ -39,7 +40,7 @@ const Projects = () => {
             <h2 className="section-title dark-blue-text">Projects</h2>
 
             {/* Project 1 */}
-            <article className="row">
+            <div className="row">
               <div className="project-wrapper__text">
                 <h3 className="project-wrapper__text-title">Bio Data</h3>
                 <p className="project-wrapper__text-info" id="two">
@@ -52,12 +53,12 @@ const Projects = () => {
 
               <div className="project-wrapper__image">
                 <a href="" target="_blank" rel="noopener noreferrer">
-                  <div className="thumbnail rounded flex justify-center" id="custom-animated-section">
-                    <img src={Biodata} className=" transform translate-x-full opacity-0 transition-transform duration-1000" alt="Project Image" />
+                  <div className="thumbnail rounded flex justify-center " id="custom-animated-section">
+                    <img src={Biodata} className=" transform  transition-transform duration-1000" alt="Project Image" />
                   </div>
                 </a>
               </div>
-            </article>
+            </div>
 
             {/* Project 2 */}
             <article className="row">

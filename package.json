@@ -16,10 +16,10 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@tippyjs/react": "^4.2.6",
-    "framer-motion": "^10.17.9",
+    "framer-motion": "^10.18.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-intersection-observer": "^9.5.3",
+    "react-intersection-observer": "^9.8.2",
     "react-router-dom": "^6.21.1",
     "react-spring": "^9.7.3",
     "rollup": "^4.9.4"

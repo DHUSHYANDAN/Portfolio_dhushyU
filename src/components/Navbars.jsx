@@ -57,7 +57,7 @@ const Navbars = () => {
               </Link>
             </li>
             <li>
-              <Link to="/cont" className="sh text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1">
+              <Link to="/contactme" className="sh text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1">
                 Contact
               </Link>
             </li>

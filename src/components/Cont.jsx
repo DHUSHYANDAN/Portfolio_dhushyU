@@ -18,7 +18,7 @@ const Contactme = () => {
 
   return (
     <section id="contact" ref={ref}>
-      <div className='sm:h-40  xl:h-72'></div>
+      {/* <div className='sm:h-40  xl:h-72'></div> */}
       <div className=''></div>
       <div className="container">
       <h2 className="section-title">Contact</h2>
@@ -38,7 +38,7 @@ const Contactme = () => {
           </a>
         </motion.div>
       </div> 
-      <div className="sm:h-52 xl:h-60"></div>
+      {/* <div className="sm:h-52 xl:h-60"></div> */}
     </section>
   );
 };

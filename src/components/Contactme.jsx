@@ -19,7 +19,7 @@ const Contactme = () => {
   return (
     <section id="contact" ref={ref}>
       <div className='h-40  xl:h-72'></div>
-      <div className=''></div>
+      
       <div className="container">
       <h2 className="section-title">Contact</h2>
         

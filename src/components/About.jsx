@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import profilePic from '../assets/dhushyandan.png';
 import backab from '../assets/backab.jpeg';
+import dhush from "../assets/dhush.jpeg"
 
 function ProfileCard() {
   useEffect(() => {
@@ -67,13 +68,13 @@ function ProfileCard() {
           </div>
         </div>
         {/* Img Col */}
-        <div className="w-full lg:w-2/5" id="custom-animated-section" >
+        <div className="w-full lg:w-1/4  " id="custom-animated-section" >
           {/* Big profile image for side bar (desktop) */}
-          <img src={profilePic} className="rounded-none lg:rounded-lg shadow-2xl hidden lg:block ml-8 border bg-gray-300 opacity-75 animate-profile" alt="Profile"/>
+          <img src={dhush} className="rounded-none p-1 lg:rounded-lg shadow-2xl hidden lg:block ml-8 border bg-gray-500 opacity-75 animate-profile" alt="Profile"/>
          
         </div>
       </div>
-      
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 }
