@@ -2,18 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Template = () => {
-  const [showWelcome, setShowWelcome] = useState(false);
-
-  useEffect(() => {
-    setShowWelcome(true);
-  }, []);
 
   return (
     <div id="hero">
       <section className="container">
-        <h1 className="hero-title animate-slide-left">
-          <center>
-            <span className={showWelcome ? 'typewriter' : ''}>Welcome To My Website</span> <br /> I&apos;m <span className="text-color-main name pr-6">Dhushyandan</span>
+        <h1 className="hero-title animate-slide-left ">
+          <center className=''>
+            <span>Welcome To My Website</span> <br /> I&apos;m <span className="text-color-main name pr-6">Dhushyandan</span>
             a Web <span className="text-color-main name">Developer.</span>
           </center>
         </h1>
@@ -24,10 +19,11 @@ const Template = () => {
             Get in touch
           </Link>
         </p>
-        <br /><br /><br /><br /><br /><br /><br />
-        <a href="#footer" className="scroll-down-link" aria-label="scroll-down">
+   
+        
+        {/* <a href="#footer" className="scroll-down-link" aria-label="scroll-down">
           <div className="scroll-down"></div>
-        </a>
+        </a> */}
       </section>
     </div>
   );
