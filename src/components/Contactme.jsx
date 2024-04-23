@@ -18,6 +18,8 @@ const Contactme = () => {
 
   return (
     <section id="contact" ref={ref}>
+      <div className='h-40  xl:h-72'></div>
+      <div className=''></div>
       <div className="container">
       <h2 className="section-title">Contact</h2>
         
@@ -35,7 +37,8 @@ const Contactme = () => {
              smartdhushyu@gmail.com
           </a>
         </motion.div>
-      </div>
+      </div> 
+      <div className="h-52 xl:h-60"></div>
     </section>
   );
 };

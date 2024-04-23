@@ -29,7 +29,7 @@ const Navbars = () => {
         </div>
       )}
       {/* Navbar for desktop */}
-      <nav id="lapview" className="hidden sm:flex z-10 sticky top-0 justify-between border-4 rounded-r-lg hover:border-purple-400 transition duration-500 bg-black ease-in-out shado p-2 text-white">
+      <nav id="lapview" className="hidden sm:flex z-10 sticky top-0 justify-between border-4 rounded-r-lg  transition duration-500 bg-black ease-in-out  p-2 text-white">
         <Link to="/">
           <img
             className="bg-purple-900 rounded-lg p-1 mt-1 ml-2 "
@@ -66,18 +66,18 @@ const Navbars = () => {
       </nav>
 
       {/* Navbar for mobile */}
-      <nav className="sm:hidden z-10 sticky top-0 flex justify-between items-center bg-black border-4 rounded-r-lg hover:border-purple-400 transition duration-500 bg-black ease-in-out shado p-4">
+      <nav className="sm:hidden z-10 sticky top-0 flex justify-between items-center bg-black border-4 rounded-r-lg  transition duration-500 bg-black ease-in-out h-36 p-4">
         <Link to="/">
           <img
             className="bg-purple-900 rounded-lg p-1"
             src={logo}
             alt="Profile Image"
-            width="90"
+            width="120"
           />
         </Link>
         <button onClick={toggleSidebar} className="text-white focus:outline-none">
         
-        <svg xmlns="http://www.w3.org/2000/svg" id="nav" className="h-6 w-6 hover:text-gray-200 flex" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" id="nav" className="h-10 w-10 hover:text-gray-200 flex" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4  12h16M4 18h16" />
   </svg>
         </button>
@@ -103,7 +103,7 @@ const Navbars = () => {
             </div>
             <ul className="md:flex p-4  h-full ">
             <li>
-              <Link to="/" className="flex hover:text-white mar hover:border-blue-600 text-indigo-700 hover:bg-blue-600 bor  p-1 flex rounded-md font-bold  justify-center mt-4 ">
+              <Link to="/" className="flex hover:text-white mar hover:border-blue-600 text-indigo-700 hover:bg-blue-600 bor  p-1 flex rounded-md font-bold  justify-center mt-6 ">
                 <div className="flex">
                   <svg
                     className="flex m-1   pr-6 pl-3"
@@ -128,7 +128,7 @@ const Navbars = () => {
             <li>
               <Link
                 to="/about"
-                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600  p-2 flex rounded-md font-bold  justify-center mt-4"
+                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600  p-2 flex rounded-md font-bold  justify-center mt-6"
               >
                 <div className="flex">
                   <svg
@@ -148,7 +148,7 @@ const Navbars = () => {
             <li>
               <Link
                 to="/projects"
-                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-2 flex rounded-md font-bold  justify-center mt-4"
+                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-2 flex rounded-md font-bold  justify-center mt-6"
               >
                 <div className="flex">
                   <svg
@@ -171,7 +171,7 @@ const Navbars = () => {
             <li>
               <Link
                 to="/contactme"
-                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-1 flex rounded-md font-bold  justify-center mt-4"
+                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-1 flex rounded-md font-bold  justify-center mt-6"
               >
                 <div className="flex">
                   <svg
