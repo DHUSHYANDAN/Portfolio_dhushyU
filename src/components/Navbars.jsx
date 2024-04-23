@@ -29,17 +29,17 @@ const Navbars = () => {
         </div>
       )}
       {/* Navbar for desktop */}
-      <nav id="lapview" className="hidden sm:flex z-10 sticky top-0 justify-between border-4 rounded-r-lg  transition duration-500 bg-black ease-in-out  p-2 text-white">
+      <nav id="lapview" className="hidden sm:flex z-10 sticky top-0 justify-between border-4 rounded-r-lg  transition duration-500 bg-black ease-in-out  p-2 text-white h-36">
         <Link to="/">
           <img
-            className="bg-purple-900 rounded-lg p-1 mt-1 ml-2 "
+            className="bg-purple-900 rounded-lg p-1 mt-2 ml-2 "
             src={logo}
             alt="Profile Image"
-            width="99"
-            height="0"
+            width="120"
+            height=""
           />
         </Link>
-        <div className="px-4 py-6 ">
+        <div className="px-4 py-8 ">
           <ul className="flex px-4 space-x-24">
             <li>
               <Link to="/" className="sh text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1">
@@ -57,7 +57,7 @@ const Navbars = () => {
               </Link>
             </li>
             <li>
-              <Link to="/contactme" className="sh text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1">
+              <Link to="/cont" className="sh text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1">
                 Contact
               </Link>
             </li>

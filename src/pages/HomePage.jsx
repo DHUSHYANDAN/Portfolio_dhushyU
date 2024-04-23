@@ -1,7 +1,9 @@
 import Footer from "../components/Footer"
 import Template from "../components/Template"
 import Navbars from "../components/Navbars"
-
+import About from "../components/About"
+import Projects from "../components/Projects"
+import Cont from "../components/Cont"
 
 const HomePage = () => {
   return (
@@ -9,6 +11,10 @@ const HomePage = () => {
       
       <Navbars />
       <Template />
+     <About/>
+      <Projects/>
+      
+      <Cont/>
       <Footer />
     </>
   )
