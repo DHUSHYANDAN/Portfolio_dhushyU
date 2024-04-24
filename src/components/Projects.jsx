@@ -89,7 +89,7 @@ const Projects = () => {
               <div className="project-wrapper__text">
                 <h3 className="project-wrapper__text-title">Netflix Project</h3>
                 <p className="project-wrapper__text-info" id="four">
-                  This project is just a normal project containing a sign-in page. And there are four pages in this project, similar to the Netflix website.
+                This project is a standard website featuring a home page and a sign-in page, similar to the layout of the Netflix website. It comprises four pages in total. The website is built using HTML and CSS.
                 </p>
                 <div className="project-wrapper__text-btns">
                   <a href="https://github.com/DHUSHYANDAN/Netflix_model_project.git" target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-btn--hero cta-btn--projects">Source Code</a>
