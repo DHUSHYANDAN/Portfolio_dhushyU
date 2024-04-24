@@ -85,8 +85,8 @@ const Navbars = () => {
 
       {/* Sidebar */}
       {isSidebarOpen && (
-        <div className="sm:hidden fixed inset-0 flex items-center text-white bg-gray-900 bg-opacity-50 z-20   ">
-          <div className="h-full w-64 flex flex-col items w-96 text-white  border-4 rounded-r-lg hover:border-gray-600 transition duration-500  ease-in-out sho bg-gray-100  p-2  mt-5 ml-2 mb-2">
+        <div onClick={toggleSidebar} className="sm:hidden fixed inset-0 flex items-center text-white bg-gray-900 bg-opacity-50 z-20   ">
+          <div  className="h-full w-64 flex flex-col items w-96 text-white  border-4 rounded-r-lg hover:border-gray-600 transition duration-500  ease-in-out sho bg-gray-100  p-2  mt-5 ml-2 mb-2">
             <div className="bg-sky-800 rounded-r-lg  flex justify-between p-3">
             <img
               className="flex "
