@@ -73,7 +73,7 @@ const Projects = () => {
               </div>
 
               <div className="project-wrapper__image">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://dhushyandan.github.io/parallax/" target="_blank" rel="noopener noreferrer">
                   <div className="thumbnail rounded">
                     <video width="100%" autoPlay muted loop className="img-fluid">
                       <source src={ParallaxVid} />
