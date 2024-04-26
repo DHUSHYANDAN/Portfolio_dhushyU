@@ -68,7 +68,7 @@ const Projects = () => {
                   It is a simple level project. A typical website with a parallax effect is one in which the background of the website moves slower than the elements in the foreground. The visual effect we`&apos;`re able to achieve gives the impression of movement and depth as if there is space between the foreground and background.
                 </p>
                 <div className="project-wrapper__text-btns">
-                  <a href="https://github.com/DHUSHYANDAN/parallax.gi" target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-btn--hero cta-btn--projects">Source Code</a>
+                  <a href="https://github.com/DHUSHYANDAN/parallax.git" target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-btn--hero cta-btn--projects">Source Code</a>
                 </div>
               </div>
 
