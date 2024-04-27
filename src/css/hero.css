@@ -32,8 +32,6 @@
 
 
 
-
-
 #hero {
     height: 100vh;
     display: flex;
@@ -95,19 +93,19 @@
   }
   
   #one {
-    animation: reveal-text 5s ease-in-out forwards;
+    animation: reveal-text 3s ease-in-out forwards;
   
   }
   #two {
-    animation: reveal-text 5s ease-in-out forwards;
+    animation: reveal-text 3s ease-in-out forwards;
   
   }
   #three{
-    animation: reveal-text 5s ease-in-out forwards;
+    animation: reveal-text 3s ease-in-out forwards;
   
   }
   #four{
-    animation: reveal-text 5s ease-in-out forwards;
+    animation: reveal-text 3s ease-in-out forwards;
   
   }
 
