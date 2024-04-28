@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/Logo.png';
 
 const Navbars = () => {
@@ -40,26 +40,26 @@ const Navbars = () => {
           />
         </Link>
         <div className="px-4 py-8 ">
-          <ul className="flex px-4 space-x-24">
+          <ul id='myDIV' className="flex px-4 space-x-24">
             <li>
-              <Link to="/" className="sh text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1">
+              <NavLink to="/" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1" activeClassName="active">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about" className="sh text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1">
+              <NavLink to="/about" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1" activeClassName="active">
                 About
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/projects" className="sh text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1">
+              <NavLink to="/projects" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1" activeClassName="active">
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contactme" className="sh text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1">
+              <NavLink to="/contactme" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1" activeClassName="active">
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -101,9 +101,9 @@ const Navbars = () => {
                 </svg>
               </button>
             </div>
-            <ul className="md:flex p-4  h-full ">
+            <ul id='myDIV' className="md:flex p-4  h-full ">
             <li>
-              <Link to="/" className="flex hover:text-white mar hover:border-blue-600 text-indigo-700 hover:bg-blue-600 bor  p-1 flex rounded-md font-bold  justify-center mt-6 ">
+              <NavLink to="/" className="btn flex hover:text-white mar hover:border-blue-600 text-indigo-700 hover:bg-blue-600 bor  p-1 flex rounded-md font-bold  justify-center mt-6 " activeClassName="active">
                 <div className="flex">
                   <svg
                     className="flex m-1   pr-6 pl-3"
@@ -123,12 +123,13 @@ const Navbars = () => {
                   </svg>
                   <span className="m-1 mr-6 ">Home</span>
                 </div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/about"
-                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600  p-2 flex rounded-md font-bold  justify-center mt-6"
+                className="btn flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600  p-2 flex rounded-md font-bold  justify-center mt-6"
+                activeClassName="active"
               >
                 <div className="flex">
                   <svg
@@ -143,12 +144,13 @@ const Navbars = () => {
                   </svg>
                   <span className="m-1 mr-6 ">About </span>
                 </div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/projects"
-                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-2 flex rounded-md font-bold  justify-center mt-6"
+                className="btn flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-2 flex rounded-md font-bold  justify-center mt-6"
+                activeClassName="active"
               >
                 <div className="flex">
                   <svg
@@ -166,12 +168,13 @@ const Navbars = () => {
                   </svg>
                   <span className="m-1 mr-6 ">  Projects</span>
                 </div>
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/contactme"
-                className="flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-1 flex rounded-md font-bold  justify-center mt-6"
+                className="btn flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-1 flex rounded-md font-bold  justify-center mt-6"
+                activeClassName="active"
               >
                 <div className="flex">
                   <svg
@@ -186,7 +189,7 @@ const Navbars = () => {
                   </svg>
                   <span className="m-1 mr-6 ">Contact</span>
                 </div>
-              </Link>
+              </NavLink>
             </li>
           </ul>
           </div>

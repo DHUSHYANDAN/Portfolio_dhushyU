@@ -49,7 +49,25 @@
   padding-left:16%;
 }
 
+/* activeclassName for navbars */
+.active {
 
+  color:#6b21a8;
+  background-color:#f3e8ff;
+  box-shadow: 0 8px 10px rgba(255, 255, 255, 0.4);
+ 
+}
+
+@media screen and (max-width: 640px) {
+  .active{
+    color:white;
+  background-color:#2563eb;
+  box-shadow: 0 10px 15px rgba(66, 153, 225, 0.7);
+  transform: scale(1.03);
+  margin-left: 29px; 
+  margin-right: 29px;;
+  }
+}
 
 
 /* about card height */
