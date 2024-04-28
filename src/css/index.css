@@ -32,9 +32,11 @@
         margin-right: 29px;;
       }
     }
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 640px) {
       .bor{
-       border:2px solid rgba(173, 216, 230, 0.5)
+       border:1px solid white;
+       box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.2);
+     
       }
    }
    
