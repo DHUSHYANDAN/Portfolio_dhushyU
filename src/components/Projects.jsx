@@ -41,7 +41,7 @@ const Projects = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 10000 ,
-    className: "bg-gray-900 text-gray-100 rounded-lg"
+    className: " rounded-lg"
   };
 
   return (
