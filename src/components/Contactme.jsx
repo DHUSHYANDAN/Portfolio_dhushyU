@@ -17,8 +17,8 @@ const Contactme = () => {
   }, [controls, inView]);
 
   return (
-    <section id="contact" ref={ref}>
-      <div className='h-40  xl:h-72'></div>
+    <section id="contact" className='w-dvw' ref={ref}>
+      {/* <div className='h-40  xl:h-72'></div> */}
       
       <div className="container">
       <h2 className="section-title">Contact</h2>
@@ -38,7 +38,7 @@ const Contactme = () => {
           </a>
         </motion.div>
       </div> 
-      <div className="h-52 xl:h-60"></div>
+      {/* <div className="h-52 xl:h-60"></div> */}
     </section>
   );
 };

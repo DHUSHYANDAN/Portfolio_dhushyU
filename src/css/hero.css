@@ -68,7 +68,19 @@
 
   }
 }
-
+/* for contactme height */
+.w-dvw{ height: 60vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;}
+  @media screen and (min-width: 1200px){
+    .w-dvw{
+      height: 80vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+    }
+  }
 
 /* about card height */
 .heig{
