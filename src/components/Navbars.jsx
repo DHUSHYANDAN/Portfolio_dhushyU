@@ -9,7 +9,7 @@ const Navbars = () => {
     // Simulate a delay to showcase the loading indicator
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 50); // Adjust the delay time as needed
+    }, 500); // Adjust the delay time as needed
 
     // Clear the timeout when the component unmounts
     return () => clearTimeout(timer);
