@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
-import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const fadeProps = useSpring({
@@ -10,9 +9,9 @@ const Contact = () => {
   });
 
   const slideProps = useSpring({
-    from: { transform: 'translateY(50px)' },
+    from: { transform: 'translateY(90px)' },
     to: { transform: 'translateY(0px)' },
-    config: { duration: 800 },
+    config: { duration: 900 },
   });
 
   const handleSubmit = (event) => {
@@ -22,18 +21,14 @@ const Contact = () => {
     fetch("https://formspree.io/f/xayrvpve", {
       method: 'POST',
       body: formData,
-    }).then(response => {
-      if (response.ok) {
-        alert('Success');
-      } else {
-        alert('Error');
-      }
-    });
-
-    // Reset form after submission
+    })
+   // Reset form after submission
+    alert('Your message sent Successfully');
     event.target.reset();
+    window.location.href = "/";
   };
 
+  
   return (
     <>
       <animated.div style={fadeProps}>
@@ -60,11 +55,11 @@ const Contact = () => {
                 <section className="w-full">
                   <h2 className="text-3xl font-semibold mb-4 text-orange-700">Contact Me</h2>
                   <p className="text-gray-600 mb-4">
-                    Have a project in mind or just want to say hi? Feel free to get in touch!
+                     Just want to say hi? Feel free to get in touch!
                   </p>
 
                   {/* Contact Form */}
-                  <form onSubmit={handleSubmit} action='/' className="max-w-1/2 w-full">
+                  <form onSubmit={handleSubmit} action='/'id='form' className="max-w-1/2 w-full">
                     <div className="mb-4 w-full">
                       <label htmlFor="name" className="text-2xl block text-gray-600 font-semibold mb-2">
                         Your Name

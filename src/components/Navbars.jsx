@@ -42,22 +42,22 @@ const Navbars = () => {
         <div className="px-4 py-8 ">
           <ul id='myDIV' className="flex px-4 space-x-24">
             <li>
-              <NavLink to="/" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1" activeClassName="active">
+              <NavLink to="/" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold  rounded-md px-2 py-1" activeClassName="active">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/about" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1" activeClassName="active">
+              <NavLink to="/about" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold  rounded-md px-2 py-1" activeClassName="active">
                 About
               </NavLink>
             </li>
             <li>
-              <NavLink to="/projects" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1" activeClassName="active">
+              <NavLink to="/projects" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold rounded-md px-2 py-1" activeClassName="active">
                 Projects
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contactme" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold text-indigo-700  rounded-md px-2 py-1" activeClassName="active">
+              <NavLink to="/contactme" className="sh btn text-white shadow hover:bg-purple-100 hover:text-purple-800 font-bold   rounded-md px-2 py-1" activeClassName="active">
                 Contact
               </NavLink>
             </li>
@@ -86,7 +86,7 @@ const Navbars = () => {
       {/* Sidebar */}
       {isSidebarOpen && (
         <div onClick={toggleSidebar} className="sm:hidden fixed inset-0 flex items-center text-white bg-gray-900 bg-opacity-50 z-20   ">
-          <div onClick={(e) => e.stopPropagation()} className="h-full w-64 flex flex-col items w-96 text-white  border-4 rounded-r-lg hover:border-gray-600 transition duration-500  ease-in-out sho bg-gray-100  p-2  mt-5 ml-2 mb-2">
+          <div onClick={(e) => e.stopPropagation()} className="h-full  flex flex-col items w-96 text-white  border-4 rounded-r-lg hover:border-gray-600 transition duration-500  ease-in-out sho bg-gray-100  p-2  mt-5 ml-2 mb-2">
             <div className="bg-sky-800 rounded-r-lg  flex justify-between p-3">
             <img
               className="flex "
@@ -103,7 +103,7 @@ const Navbars = () => {
             </div>
             <ul id='myDIV' className="md:flex p-4  h-full ">
             <li>
-              <NavLink to="/" className="btn flex hover:text-white mar hover:border-blue-600 text-indigo-700 hover:bg-blue-600 bor  p-1 flex rounded-md font-bold  justify-center mt-6 " activeClassName="active">
+              <NavLink to="/" className="btn flex hover:text-white mar hover:border-blue-600 text-indigo-700 hover:bg-blue-600 bor  p-1  rounded-md font-bold  justify-center mt-6 " activeClassName="active">
                 <div className="flex">
                   <svg
                     className="flex m-1   pr-6 pl-3"
@@ -128,7 +128,7 @@ const Navbars = () => {
             <li>
               <NavLink
                 to="/about"
-                className="btn flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600  p-2 flex rounded-md font-bold  justify-center mt-6"
+                className="btn flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600  p-2  rounded-md font-bold  justify-center mt-6"
                 activeClassName="active"
               >
                 <div className="flex">
@@ -149,7 +149,7 @@ const Navbars = () => {
             <li>
               <NavLink
                 to="/projects"
-                className="btn flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-2 flex rounded-md font-bold  justify-center mt-6"
+                className="btn flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-2  rounded-md font-bold  justify-center mt-6"
                 activeClassName="active"
               >
                 <div className="flex">
@@ -173,7 +173,7 @@ const Navbars = () => {
             <li>
               <NavLink
                 to="/contactme"
-                className="btn flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-1 flex rounded-md font-bold  justify-center mt-6"
+                className="btn flex hover:text-white mar  text-indigo-700 hover:bg-blue-600 bor hover:border-blue-600 p-1  rounded-md font-bold  justify-center mt-6"
                 activeClassName="active"
               >
                 <div className="flex">
