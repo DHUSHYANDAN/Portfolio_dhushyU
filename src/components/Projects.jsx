@@ -41,7 +41,7 @@ const Projects = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 10000 ,
+    autoplaySpeed: 10000,
     className: " rounded-lg"
   };
 
@@ -54,9 +54,9 @@ const Projects = () => {
             {/* Project 1 */}
             <div className="row ">
               <div className="project-wrapper__text p-8  ">
-                <h3 className="project-wrapper__text-title">Bio Data</h3>
+                <h3 className="project-wrapper__text-title">Biographical Data Form Validation</h3>
                 <p className="project-wrapper__text-info " id="two ">
-                  It is a basic level project. Also known as biographical data, a biodata typically includes a range of specific factual information about an individual. "It is a validation form". Essentially, biodata highlights a number of details about a person such as; name, age, color, height, skills, hobbies, allergies etc.
+                  Developed a comprehensive form validation script in JavaScript for biographical data. This project involved creating a web form that collects various personal details and ensuring all input fields meet specified validation criteria before submission.
                 </p>
                 <div className="project-wrapper__text-btns">
                   <a href="https://github.com/DHUSHYANDAN/BioDATA.git" target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-btn--hero cta-btn--projects">Source Code</a>
@@ -76,7 +76,7 @@ const Projects = () => {
               <div className="project-wrapper__text p-8">
                 <h3 className="project-wrapper__text-title">Parallax Website</h3>
                 <p className="project-wrapper__text-info" id="three">
-                  It is a simple level project. A typical website with a parallax effect is one in which the background of the website moves slower than the elements in the foreground. The visual effect we&apos;re able to achieve gives the impression of movement and depth as if there is space between the foreground and background.
+                  Created a basic website featuring a parallax effect. A typical website with a parallax effect is one in which the background of the website moves slower than the elements in the foreground. The visual effect we&apos;re able to achieve gives the impression of movement and depth as if there is space between the foreground and background.
                 </p>
                 <div className="project-wrapper__text-btns">
                   <a href="https://github.com/DHUSHYANDAN/parallax.git" target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-btn--hero cta-btn--projects">Source Code</a>
@@ -97,7 +97,7 @@ const Projects = () => {
             {/* Project 3 */}
             <div className="row">
               <div className="project-wrapper__text p-8">
-                <h3 className="project-wrapper__text-title">Netflix Project</h3>
+                <h3 className="project-wrapper__text-title">Netflix Clone Project</h3>
                 <p className="project-wrapper__text-info" id="four">
                   This project is a standard website featuring a home page and a sign-in page, similar to the layout of the Netflix website. It comprises four pages in total. The website is built using HTML and CSS.
                 </p>
@@ -116,13 +116,13 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            
-  {/* Project 4 */}
-  <div className="row">
+
+            {/* Project 4 */}
+            <div className="row">
               <div className="project-wrapper__text p-8">
-                <h3 className="project-wrapper__text-title">JWT Validation Form</h3>
+                <h3 className="project-wrapper__text-title">Admission Form Application</h3>
                 <p className="project-wrapper__text-info" id="four">
-                This project is an admission form application where users need to log in to access the admission form. It utilizes JWT tokens for authentication and protected routes. The project integrates Express.js, Node.js, MongoDB, and EJS for views, encompassing a complete frontend, backend, and database solution.
+                  This project is an admission form application where users need to log in to access the admission form. It utilizes JWT tokens for authentication and protected routes. The project integrates Express.js, Node.js, MongoDB, and EJS for views, encompassing a complete frontend, backend, and database solution.
                 </p>
                 <div className="project-wrapper__text-btns">
                   <a href="https://github.com/DHUSHYANDAN/Admission_Form.git" target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-btn--hero cta-btn--projects">Source Code</a>
@@ -145,7 +145,7 @@ const Projects = () => {
           </Slider>
         </div>
       </div>
-      
+
     </section>
   );
 };
