@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Biodata from "../assets/biodata.webp";
 import ParallaxVid from '../assets/parallex.webm';
 import NetflixVid from '../assets/Netflix.mp4';
+import Admform from '../assets/adform.mp4';
 
 const Projects = () => {
   useEffect(() => {
@@ -130,8 +131,8 @@ const Projects = () => {
                 <a href=" https://admission-portal-zgny.onrender.com/" target="_blank" rel="noopener noreferrer">
                   <div className="thumbnail rounded">
                     <video width="100%" autoPlay muted loop className="img-fluid">
-                      <source src={NetflixVid} type="video/mp4" />
-                      <source src={NetflixVid} type="video/ogg" />
+                      <source src={Admform} type="video/mp4" />
+                      <source src={Admform} type="video/ogg" />
                     </video>
                   </div>
                 </a>
