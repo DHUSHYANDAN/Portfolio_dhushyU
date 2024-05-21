@@ -115,6 +115,31 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+  {/* Project 4 */}
+  <div className="row">
+              <div className="project-wrapper__text p-8">
+                <h3 className="project-wrapper__text-title">JWT Validation Form</h3>
+                <p className="project-wrapper__text-info" id="four">
+                This project is an admission form application where users need to log in to access the admission form. It utilizes JWT tokens for authentication and protected routes. The project integrates Express.js, Node.js, MongoDB, and EJS for views, encompassing a complete frontend, backend, and database solution.
+                </p>
+                <div className="project-wrapper__text-btns">
+                  <a href="https://github.com/DHUSHYANDAN/Admission_Form.git" target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-btn--hero cta-btn--projects">Source Code</a>
+                </div>
+              </div><br /><br />
+              <div className="project-wrapper__image">
+                <a href=" https://admission-portal-zgny.onrender.com/" target="_blank" rel="noopener noreferrer">
+                  <div className="thumbnail rounded">
+                    <video width="100%" autoPlay muted loop className="img-fluid">
+                      <source src={NetflixVid} type="video/mp4" />
+                      <source src={NetflixVid} type="video/ogg" />
+                    </video>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+
           </Slider>
         </div>
       </div>
