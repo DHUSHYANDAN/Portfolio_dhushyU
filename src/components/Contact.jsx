@@ -1,7 +1,15 @@
-import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import React, { useState } from "react";
+import { useSpring, animated } from "react-spring";
+
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
   const fadeProps = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
@@ -9,115 +17,178 @@ const Contact = () => {
   });
 
   const slideProps = useSpring({
-    from: { transform: 'translateY(90px)' },
-    to: { transform: 'translateY(0px)' },
+    from: { transform: "translateY(90px)" },
+    to: { transform: "translateY(0px)" },
     config: { duration: 900 },
   });
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-
-    fetch("https://formspree.io/f/xayrvpve", {
-      method: 'POST',
-      body: formData,
-    })
-   // Reset form after submission
-    alert('Your message sent Successfully');
-    event.target.reset();
-    window.location.href = "/";
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    try {
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setStatus("Failed to send the message.");
+      }
+    } catch (error) {
+      setStatus("Error: Could not send the message.");
+    }
+  };
+
   return (
-    <>
-      <animated.div style={fadeProps}>
-        <div id='iam' className="text-left bg-gray-900 text-black max-w-screen-xl mx-auto rounded-md p-6 shadow-md">
-          <div className='bg-gray-200 opacity-90 border-4'>
-            <nav className="bg-gray-800 text-white p-4 w-full">
-              <div className="container mx-auto">
-                <a href="/" className="text-xl font-semibold">
-                  Get in Touch
-                </a>
+    <animated.div
+      style={fadeProps}
+      className="p-8 min-h-screen bg-gray-500 flex items-center justify-center sm:p-4"
+    >
+      <animated.div
+        style={slideProps}
+        className="md:max-w-5xl xl:p-10 lg:max-w-7xl w-full bg-gray-800 rounded-2xl shadow-xl border border-gray-700"
+      >
+        <div className="p-6">
+          {/* Header */}
+          <h2 className="text-center text-3xl font-bold text-green-400 mb-6">
+            Make in Touch With Me
+          </h2>
+          <p className="text-center text-gray-400 mb-6">
+            Feel free to reach out to me! Fill out the form below and I’ll get
+            back to you soon.
+          </p>
+
+          {/* Form */}
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Name Field */}
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-green-500 text-xl font-medium mb-2"
+                >
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded-lg bg-gray-900 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="Enter your name"
+                  required
+                />
               </div>
-            </nav>
 
-            <animated.div style={slideProps} className="px-4 md:px-0">
-              <div className="container mx-auto mt-8 w-full text-left">
-                <section className="mb-8 w-full">
-                  <h2 className="text-3xl font-semibold mb-4 text-green-700 ">Hello, I'm DHUSHYANDAN</h2>
-                  <p className="text-gray-600 font-medium ">
-                    Welcome to my portfolio. I am a passionate Web Developer with expertise in HTML, CSS, Basic in Javascript, basics of python, basics of Java, basics of React, Bootstrap, and Tailwindcss.
-                    Feel free to explore my work below.
-                  </p>
-                </section>
-
-                <section className="w-full">
-                  <h2 className="text-3xl font-semibold mb-4 text-orange-700">Contact Me</h2>
-                  <p className="text-gray-600 mb-4">
-                     Just want to say hi? Feel free to get in touch!
-                  </p>
-
-                  {/* Contact Form */}
-                  <form onSubmit={handleSubmit} action='/'id='form' className="max-w-1/2 w-full">
-                    <div className="mb-4 w-full">
-                      <label htmlFor="name" className="text-2xl block text-gray-600 font-semibold mb-2">
-                        Your Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name"
-                        className="w-full md:w-1/2 p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 text-black"
-                        required
-                      />
-                    </div>
-                    <div className="mb-4 w-full">
-                      <label htmlFor="email" className="block text-gray-600 font-semibold mb-2 text-2xl">
-                        Your Email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        className="w-full md:w-1/2 p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 text-black"
-                        required
-                      />
-                    </div>
-                    <div className="mb-4 w-full">
-                      <label htmlFor="message" className="block text-gray-600 font-semibold text-2xl mb-2">
-                        Your Message
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        placeholder="Enter your message"
-                        className="w-full md:w-1/2 p-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 text-black"
-                        required
-                      ></textarea>
-                    </div>
-                    <button
-                      type="submit"
-                      className="bg-green-500 text-black hover:text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300"
-                    >
-                       <b>Send Message</b>
-                    </button>
-                  </form>
-                </section>
+              {/* Email Field */}
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-green-500 text-xl font-medium mb-2"
+                >
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded-lg bg-gray-900 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="Enter your email"
+                  required
+                />
               </div>
-            </animated.div>
+            </div>
 
-            <footer className="bg-gray-800 text-white p-4 mt-8 w-full">
-              <div className="container mx-auto text-center">&copy; 2023 My Portfolio. All rights reserved.</div>
-            </footer>
+            {/* Message Field */}
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-green-500 text-xl font-medium mb-2"
+              >
+                Your Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                value={formData.message}
+                onChange={handleChange}
+                className="w-full p-3 rounded-lg bg-gray-900 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className="w-full bg-green-500 hover:bg-green-600 text-gray-100 py-3 rounded-lg font-bold text-lg transition-all duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+
+          {/* Status Message */}
+          {status && (
+            <p className="mt-4 text-center text-green-400 font-medium">
+              {status}
+            </p>
+          )}
+        </div>
+
+       
+          <div className="p-6 border-t text-left border-gray-700">
+            {/* Phone Section */}
+          <h3 className="text-xl font-bold text-green-400 mb-4">Call Me</h3>
+          <a
+            href="tel:+916385500837"
+            className="text-lg text-green-500 hover:underline "
+          >
+            <span className="text-3xl">📞</span> <span className="text-xl">+91 6385500837</span>
+          </a>
+          </div>
+
+          {/* Social Media Section */}
+        <div className="p-6 border-t text-left border-gray-700">
+          <h3 className="text-xl font-bold text-green-400 mb-4">
+            Follow Me on Social Media
+          </h3>
+          <div className="flex space-x-8  text-2xl">
+            <a
+              href="https://www.linkedin.com/in/dhushyandan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400  hover:text-blue-600"
+            >
+              <i className="fab fa-linkedin text-5xl"></i>
+            </a>
+             
+
+            <a
+              href="https://www.instagram.com/d_h_u_s_h_yu/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-700"
+            >
+             <i className="fab fa-instagram text-5xl"></i>
+            </a>
           </div>
         </div>
       </animated.div>
-    </>
-  )
-}
+    </animated.div>
+  );
+};
 
 export default Contact;
