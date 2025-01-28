@@ -7,7 +7,14 @@ const HomePage2 = () => {
   return (
     <>
       <Navbars />
+      <div className="bg-gradient-to-b from-blue-100 to-[#56CAF1]">
       <About />
+     
+    
+      </div>
+
+
+
 
       <Footer />
     </>

@@ -31,19 +31,6 @@
 
 
 
-#hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 400;
-    
-  
-    
-    padding: 0rem 5.6rem;
-    line-height: 1.2;
-    animation: hidden 1000ms linear forwards;
-  }
   /* padding left for template */
 .pad_tem{
   padding-left:16%;
@@ -98,6 +85,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000000;
     flex-direction: column;
   }
   

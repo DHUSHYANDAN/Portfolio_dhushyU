@@ -11,6 +11,7 @@ const HomePage = () => {
       
       <Navbars />
       <Template />
+     
      <About/>
       <Projects/>
       

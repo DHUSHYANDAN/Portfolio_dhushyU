@@ -10,6 +10,7 @@ export default {
         sm1:'450px',
         sm2: '341px',
         lg890: '890px',
+        sm385:'385px',
          
       },
     },
