@@ -24,9 +24,9 @@ const ContactPage = () => {
 
   return (
     <section id="contact" ref={ref}>
-      <div className="flex flex-col shadow-md m-2 rounded-2xl items-center bg-gradient-to-b md:bg-gradient-to-r from-[#56CAF1] to-blue-100 bg-blue-100 justify-center p-6">
+      <div className="flex flex-col shadow-md m-2 rounded-2xl items-center bg-gradient-to-b md:bg-gradient-to-r from-[#5ecdf3a9] to-blue-50 bg-blue-100 justify-center p-6">
         <div className="bg-white w-full">
-          <div className="flex flex-col md:flex-row items-center bg-gradient-to-b md:bg-gradient-to-r from-[#56CAF1] to-blue-100">
+          <div className="flex flex-col md:flex-row items-center bg-gradient-to-b md:bg-gradient-to-r from-[#5ecdf3a9] to-blue-50/">
             {/* Left Section: Avatar Image */}
             <div className="w-full md:w-3/6 flex justify-center bg-gray-200 p-2 ml-2 mr-2 rounded-2xl relative">
               <div
@@ -54,31 +54,31 @@ const ContactPage = () => {
                   href="https://www.linkedin.com/in/dhushyandan/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-blue-600 hover:text-blue-800"
+                  className="flex items-center space-x-2 text-blue-500 hover:text-blue-700"
                 >
                   <i className="fab fa-linkedin text-4xl sm385:text-3xl"></i>
-                  <span> Connect with me on LinkedIn</span>
+                  <span><b> Connect with me on LinkedIn</b></span>
                 </a>
 
                 <a
                   href="https://www.instagram.com/d_h_u_s_h_yu/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-pink-500 hover:text-pink-700"
+                  className="flex items-center space-x-2 text-pink-500 hover:text-pink-600"
                 >
                   <i className="fab fa-instagram text-4xl sm385:text-3xl"></i>
-                  <span> Follow me on Instagram</span>
+                  <span> <b>Follow me on Instagram</b></span>
                 </a>
 
                 <a
                   href="mailto:smartdhushyu@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 text-2xl"
+                  className="flex items-center space-x-2 text-blue-500 hover:text-blue-700 text-2xl"
                 >
                   <i className="far fa-envelope text-4xl sm385:text-3xl hover:text-blue-500"></i>
-                  <span  className="sm385:hidden"> dhushyandan302002@ gmail.com</span>
-                  <span className="hidden sm385:inline"> dhushyandan302002@gmail.com</span>
+                  <span  className="sm385:hidden"><b> dhushyandan302002@ gmail.com</b></span>
+                  <span className="hidden sm385:inline"> <b>dhushyandan302002@gmail.com</b></span>
                 </a>
 
                 <a

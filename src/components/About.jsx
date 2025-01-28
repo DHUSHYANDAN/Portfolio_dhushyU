@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Dhush from '../assets/dhush2-removebg.png'
+import {FaDownload} from 'react-icons/fa'
 
 export default function About() {
   return (
@@ -38,8 +39,9 @@ export default function About() {
           <motion.button 
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="mt-6 bg-red-500 px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition shadow-md"
+            className="mt-6 flex items-center  bg-red-500 px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition shadow-md"
           >
+    <FaDownload className="mr-2" />
             Download Resume
           </motion.button>
         </div>
