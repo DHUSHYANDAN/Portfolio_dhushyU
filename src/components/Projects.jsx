@@ -168,9 +168,9 @@ const Projects = () => {
             {/* Project 4 */}
             <div className="row">
               <div className="project-wrapper__text p-8">
-                <h3 className="project-wrapper__text-title">Admission Form Application</h3>
+                <h3 className="project-wrapper__text-title">My Campus Hub</h3>
                 <p className="project-wrapper__text-info" id="four">
-                  This project is an admission form application where users need to log in to access the admission form. It utilizes JWT tokens for authentication and protected routes. The project integrates Express.js, Node.js, MongoDB, and EJS for views, encompassing a complete frontend, backend, and database solution.
+                This project provides an overview of my college's Campus where users need to log in to access the admission form. It utilizes JWT tokens for authentication and protected routes. The project integrates Express.js, Node.js, MongoDB, and EJS for views, encompassing a complete frontend, backend, and database solution.
                 </p>
                 <div className="project-wrapper__text-btns flex sm1:space-x-4 space-y-4 sm2:space-y-0  ">
                   <a

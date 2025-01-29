@@ -1,29 +1,47 @@
-import { motion } from "framer-motion";
-import Dhush from '../assets/dhush2-removebg.png'
-import {FaDownload} from 'react-icons/fa'
+import { motion, useAnimation } from "framer-motion";
+import Dhush from '../assets/dhush2-removebg.png';
+// import { FaDownload } from 'react-icons/fa';
+import { useInView } from 'react-intersection-observer';
+import React from "react";
+import { Link } from 'react-router-dom';
 
 export default function About() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start({
+        x: 0,
+        opacity: 1,
+        transition: { duration: 2 }
+      });
+    }
+  }, [controls, inView]);
+
   return (
-    <div id="about" className="w-full  bg-gradient-to-b from-blue-100 to-[#56CAF1] min-h-[100vh]">
+    <div id="about" className="w-full bg-gradient-to-b from-blue-100 to-[#56CAF1] min-h-[100vh]">
       {/* Top Section */}
       <div className="py-12 text-center">
-        <h1 className="text-4xl font-bold text-gray-900 "><button className="p-2 shadow-slate-400 shadow-lg">🎊 About Me</button></h1>
+        <h1 className="text-4xl font-bold text-gray-900">
+          <button className="p-2 shadow-slate-400 shadow-lg">🎊 About Me</button>
+        </h1>
       </div>
-      
-      
+
       {/* Main About Section */}
       <div className="bg-slate-200 text-white px-6 py-16 md:flex md:items-center md:justify-center md:gap-12 rounded-xl shadow-lg mx-6">
-          {/* 3D Animated Image */}
-          <motion.div 
+        {/* 3D Animated Image */}
+        <motion.div
+          ref={ref}
           className="md:w-1/3 flex justify-evenly mt-8 md:mt-0"
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
+          initial={{ x: -360, scale: 0.9, opacity: 0 }}
+          animate={controls}
           transition={{ duration: 1 }}
           whileHover={{ rotate: 5, scale: 1.05 }}
         >
-          <img 
+          <img
             src={Dhush}
-            alt="Profile Picture" 
+            alt="Profile Picture"
             className="w-66 h-72 rounded-full border-4 border-white shadow-2xl"
           />
         </motion.div>
@@ -36,17 +54,20 @@ export default function About() {
             My motto? <span className="text-red-400 font-bold">"Be Good, Be Smart"</span>.
             Let’s build and innovate together.
           </p>
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="mt-6 flex items-center  bg-red-500 px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition shadow-md"
+            className="mt-6 flex items-center bg-red-500 px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition shadow-md"
           >
-    <FaDownload className="mr-2" />
-            Download Resume
+            {/* <FaDownload className="mr-2" /> */}
+
+            <Link
+              to="/download" className="animate-bounce"
+            >
+              👉 View Resume
+            </Link>
           </motion.button>
         </div>
-        
-      
       </div>
     </div>
   );

@@ -11,6 +11,8 @@ import HomePage2 from './pages/HomePage2';
 import HomePage3 from './pages/HomePage3';
 import HomePage4 from './pages/HomePage4';
 import ContactPage from './pages/ContactPage';
+import DownloadPage from './pages/DownloadPage';
+import UploadPage from './pages/UploadPage';
 
 
 
@@ -25,7 +27,8 @@ function App() {
           <Route path='/projects' element={<HomePage3 />} />
           <Route path='/contactme' element={<HomePage4 />} />
           <Route path='/contact' element={<ContactPage />} />
-          
+          <Route path='/download' element={<DownloadPage />} />
+          <Route path='/dhushyandanresumeupload' element={<UploadPage/>}  />
           
 
 
